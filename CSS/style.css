@@ -2,6 +2,7 @@ body {
     font-family: Raleway, sans-serif;
     padding-left: 50px;
     padding-right: 50px;
+    margin: 0;
 }
 
 .logo {
@@ -133,7 +134,7 @@ h2 {
     background-color: #f2f2f2;
     width: 60%;
     border-radius: 25px;
-    padding: 20px;
+    padding-bottom: 20px;
 
 }
 
@@ -258,18 +259,13 @@ h2 {
 .activitesmarseille img {
     height: 445px;
     border-radius: 20px 20px 0 0;
-    width: 100%;
+    width: 302px;
 }
 
 .activitesmarseille {
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
-    width: 100%;
-}
-
-.activitesmarseilleliste {
-    width: 20%;
 }
 
 .activitesmarseille div {
@@ -284,11 +280,12 @@ h2 {
 
 footer {
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 20px;
+    justify-content: space-between;
     background-color: #f2f2f2;
-    padding-bottom: 20px;
-    flex-basis: 33%;
+    padding: 20px;
+}
+footer div{
+    width: 33%;
 }
 
 img {
@@ -304,6 +301,9 @@ img {
 }
 
 @media(max-width:992px) {
+    .logo{
+        padding-left: 20px;
+    }
     body {
         padding: 10px;
     }
@@ -315,6 +315,10 @@ img {
         display: flex;
         flex-direction: row;
     }
+    main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     section {
         display: flex;
@@ -324,11 +328,17 @@ img {
 
     .hebergementmarseille {
         width: 100%;
+        padding-bottom: 20px;
+    }
+    .barefilter{
+        gap: 0;
     }
 
 
     .populaires {
-        flex-basis: 100%;
+        width: 100%;
+        padding: 20px;
+
 
     }
 
@@ -337,13 +347,17 @@ img {
         flex-direction: row;
         flex-wrap: nowrap;
         font-size: 14px;
+        justify-content: space-between;
     }
 
     .populaireslist img {
         border-radius: 20px 0 0 20px;
         min-height: 144px;
         height: auto;
-        width: 106px;
+        width: 40%; 
+    }
+    .populaireslistecontenu{
+        width: 30%;
     }
 
 
@@ -354,10 +368,19 @@ img {
         flex-wrap: nowrap;
         font-size: 11px;
     }
-
+.activitesmarseilleliste{
+    width: 23%;
+}
     .activitesmarseille img {
-        width: 182px;
+        width: 100%;
         height: 267px;
+    }
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    footer div {
+        width: 33%;
     }
 }
 
@@ -365,6 +388,9 @@ img {
     body {
         padding-left: 0;
         padding-right: 0;
+    }
+    main{
+        padding: 0;
     }
 
     nav {
@@ -393,6 +419,18 @@ img {
         border-top: transparent;
         border-bottom: solid #0065FC;
     }
+    .local{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h1{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     .local .rechercher {
         display: none;
@@ -409,6 +447,8 @@ img {
         display: flex;
         flex-direction: column;
         gap: 0;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .barefilter h2 {
@@ -419,14 +459,19 @@ img {
         margin-top: auto;
         display: flex;
         flex-wrap: wrap;
-        gap: 0;
+        gap: 10px;
     }
 
     .barefilter span {
         font-size: 12px;
+
     }
     .filter i {
         padding-bottom: 08px;
+    }
+    .info{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     section {
@@ -438,6 +483,9 @@ img {
         width: 100%;
         background-color: #f2f2f2;
         border-radius: 0px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .populaireslist {
@@ -453,6 +501,9 @@ img {
     .populaireslistelement {
         width: 60%;
     }
+    .populaireslistecontenu{
+        width: 100%;
+    }
 
     .populaireslist div {
         padding-bottom: 05px;
@@ -460,6 +511,8 @@ img {
 
     .hebergementmarseille {
         background-color: white;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .hebergementmarseillelist {
@@ -484,15 +537,17 @@ img {
 
     .activitesmarseilleliste {
         width: 100%;
-        margin-left: 50px;
     }
 
 
     .activitesmarseille {
         display: flex;
         flex-direction: column;
-        gap: 50px;
         align-items: center;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 50px;
 
     }
 
@@ -504,6 +559,5 @@ img {
     footer {
         display: flex;
         flex-direction: column;
-        padding-left: 30px;
     }
 }
